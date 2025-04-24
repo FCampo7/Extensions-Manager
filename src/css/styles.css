@@ -48,13 +48,14 @@ body {
 .container {
 	margin: 2em 5em;
 	min-height: calc(100vh - 4em);
-	max-width: 100vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
-
+.overlay {
+	width: 100%;
+}
 #header {
 	background-color: var(--neutral-800);
 	display: flex;
@@ -294,6 +295,7 @@ input:checked + .slider:before {
 	body {
 		font-size: 16px;
 	}
+
 	.container {
 		margin: 2em 1em;
 	}
