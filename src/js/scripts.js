@@ -11,7 +11,9 @@ onload = function () {
 		document.getElementById("sun").classList.add("hidden");
 	}
 
-	this.fetch("../../data.json")
+	this.fetch(
+		"https://raw.githubusercontent.com/FCampo7/Extensions-Manager/refs/heads/main/data.json"
+	)
 		.then((response) => {
 			if (!response.ok) {
 				throw new Error("Network response was not ok.");
