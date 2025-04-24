@@ -1,4 +1,4 @@
-onload = function () {
+onload = async function () {
 	const body = document.body;
 	const currentTheme = localStorage.getItem("theme") || "light";
 	body.dataset.theme = currentTheme;
@@ -11,7 +11,7 @@ onload = function () {
 		document.getElementById("sun").classList.add("hidden");
 	}
 
-	this.fetch(
+	await this.fetch(
 		"https://raw.githubusercontent.com/FCampo7/Extensions-Manager/refs/heads/main/data.json"
 	)
 		.then((response) => {
