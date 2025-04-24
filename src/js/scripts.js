@@ -30,8 +30,8 @@ onload = async function () {
                     <figure>
                         <img
                             class="card__content__icon"
-                            src=${item.logo}
-                            alt=${item.name}
+                            src="${item.logo}"
+                            alt="${item.name}"
                         />
                     </figure>
                     <div class="card__content__text">
